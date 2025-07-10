@@ -8,7 +8,7 @@ function MarkdownEditor() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setPreview(markdown);
-    }, 100); // debouncing for smoother updates
+    }, 100);
     return () => clearTimeout(timeout);
   }, [markdown]);
 
